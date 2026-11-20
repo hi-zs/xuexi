@@ -1,0 +1,13 @@
+# 虚拟环境（不提交，本机专属）
+.venv/
+venv/
+
+# PyCharm 项目配置
+.idea/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 环境变量（可能含密钥，绝不能提交）
+.env
