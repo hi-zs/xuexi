@@ -24,6 +24,28 @@ def show_balance():
             total = total - amount
     return total
 # 测试
-add_record("支出",30,"晚饭")
-show_records()
-print("当前余额是",show_balance())
+# add_record("支出",30,"晚饭")
+# show_records()
+# print("当前余额是",show_balance())
+
+# 让程序能交互：循环输入记账
+while True:
+    print("\n===  记账小助手  ===")
+    print("1. 记一笔账")
+    print("2. 查看明细")
+    print("3. 查看余额")
+    print("4. 退出")
+    choice = input("请选择（1-4）：")
+    if choice == "1":
+        kind = input("类型（收入/支出）")
+        amount = float(input("金额："))
+        note = input("说明：")
+        add_record(kind,amount,note)
+        print("已记账！")
+    elif choice == "2":
+        show_records()
+    elif choice == "3":
+        print("当前余额是",show_balance())
+    elif choice == "4":
+        print("再见！")
+        break
