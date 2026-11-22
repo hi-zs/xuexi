@@ -5,7 +5,7 @@ print("第一个水果是",fruits_list[0])
 print("第三个水果是",fruits_list[2])
 # 2 添加元素
 fruits_list.append("西瓜")
-print("现在有",len(fruits_list),"种水果","第三种水果是",fruits_list[2])
+print("现在有",len(fruits_list),"种水果",fruits_list)
 # 3 循环遍历
 scores = [88,92,75,60,100]
 total = 0
